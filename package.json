@@ -2,7 +2,6 @@
   "name": "03-api-solid",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
@@ -16,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/jwt": "9.0.2",
     "@prisma/client": "6.0.1",
     "bcryptjs": "2.4.3",
     "dayjs": "1.11.13",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.16.0",
-    "@types/bcryptjs": "2.4.6",
+    "@types/bcryptjs": "2.4.3",
     "@types/node": "22.10.2",
     "@vitest/coverage-v8": "2.1.8",
     "eslint": "9.16.0",
